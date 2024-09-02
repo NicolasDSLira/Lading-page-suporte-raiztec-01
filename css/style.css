@@ -1,0 +1,139 @@
+html, 
+body{
+    margin: 0; padding: 0;
+    top: 0; left: 0; 
+    right: 0; bottom: 0;
+}
+
+.header{
+    background-image: url(../images/iStock-625135580.jpg); 
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 85vh;
+    align-items: center;
+}
+
+@media (max-width: 1085px) {
+    .header{
+        background-position: 50%;
+        background-size: auto 100%;
+    } 
+}
+
+.container-head{
+    background: #00000092;
+    backdrop-filter: blur(5px);
+    margin: 5rem;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+}
+
+.quebra{
+    background: url('./../images/pattern.png') #5ec71e;
+}
+
+
+.section-map{
+    position: relative;
+    border-top: #5ec71e 1px solid;
+    border-bottom: #5ec71e 1px solid;
+
+}
+
+
+.wrap-map{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90vw;
+    height: 300px;
+}
+
+.info-map{
+    background-image: linear-gradient(to top left, #5ec71e, #52af18);
+    width: 25%;
+    color: #fff;
+    font-size: 11pt;
+}
+
+
+.footer{
+    padding: 5rem 5rem 1rem 5rem ;
+}
+
+
+
+.js .anime {
+	opacity: 0;
+}
+
+
+
+.js .anime-init {
+	opacity: 1;
+	transform: translate3D(0px, 0px, 0px);
+	transition: .3s all ease;
+}
+
+.whatsapp{
+    display: block;
+	position: fixed;
+    top: 1; bottom: 0;
+    left: 0; right: 1;
+    margin-left: 50px;
+    background: #52af18;
+    border-radius:100%;
+    padding: 20px;
+    border: 0px;
+    box-shadow: 1px 1px 10px black;
+    transition: all .5s;
+    animation: lifeWhatsApp 1s infinite;
+}
+
+.whatsapp:hover{
+    cursor: pointer;
+    background: #2e6b08;
+}
+
+.whatsapp *{
+    color: aliceblue;
+}
+
+
+@media (max-width: 900px) {
+    .header{
+        justify-content: center;
+    }
+
+    .wrap-map{
+        display: block;
+        position: relative;
+        left: auto;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .info-map{
+        width: 100%;
+    }
+
+    .whatsapp{
+        margin-right: 20px;
+    }
+
+}
+
+
+@keyframes lifeWhatsApp{
+    0%{
+        margin-bottom: 80px;
+    }
+    50%{
+        margin-bottom: 70px;
+    }
+    100%{
+        margin-bottom: 80px;
+    }
+}
